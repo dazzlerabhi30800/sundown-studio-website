@@ -4,7 +4,7 @@
 //     vertical: true,
 // });
 
-// const locomotiveScroll = new LocomotiveScroll();
+const locomotiveScroll = new LocomotiveScroll();
 
 const elemContainer = document.querySelector('#elem-container');
 const fixedImg = document.querySelector('.fixed-img');
