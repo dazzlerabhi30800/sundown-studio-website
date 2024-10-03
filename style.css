@@ -1,0 +1,353 @@
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+
+:root {
+  --transition-linear: 0.3s linear;
+  --orange: #f44020;
+  --bg: #efeae3;
+  --yellow: #f28333;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+.addOverflow {
+  overflow: hidden !important;
+}
+
+.removeOverflow {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.page {
+  background: var(--bg);
+}
+
+* {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+.link {
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #c5c5c5;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.link a {
+  z-index: 10;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: var(--transition-linear);
+}
+.link:hover a {
+  color: #fff;
+}
+.link:hover::after {
+  bottom: 0;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #292929;
+  bottom: -100%;
+  left: 0;
+  z-index: 1;
+  border-radius: 20px;
+  transition: var(--transition-linear);
+}
+
+#hero-shape {
+  position: absolute;
+  top: 54vh;
+  z-index: 0;
+  height: 35vh;
+  width: 80vw;
+  right: 0;
+}
+#hero-1 {
+  background: var(--orange);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(15px);
+  border-radius: 50% 0 0 50%;
+}
+
+#hero-2 {
+  position: absolute;
+  background: var(--orange);
+  border-radius: 50%;
+  filter: blur(15px);
+  height: 50%;
+  width: 50%;
+  animation: anime1 5s linear alternate infinite;
+}
+
+#hero-3 {
+  position: absolute;
+  background: linear-gradient(var(--orange), #f37922);
+  border-radius: 50%;
+  filter: blur(20px);
+  right: 0;
+  height: 70%;
+  width: 50%;
+  animation: anime1 5s linear alternate infinite;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(20%, 15%);
+  }
+  to {
+    transform: translate(-20%, -15%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(20%, 20%);
+  }
+  to {
+    transform: translate(-20%, -20%);
+  }
+}
+
+/* PAGE 2 */
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation: move 7s linear infinite;
+}
+
+.con h1 {
+  display: inline-block;
+  font-size: 9vw;
+}
+
+.circle {
+  margin: 1.5vw 2vw;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#page-bottom > * {
+  position: relative;
+  z-index: 44;
+}
+#page-bottom::after,
+#page-bottom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(to top, var(--orange), #f35d22);
+  filter: blur(20px);
+  z-index: 0;
+}
+#page-bottom::after {
+  transform: translate(-80%, -20%);
+}
+
+#page-bottom::before {
+  animation: anime3 3s ease-in-out alternate infinite;
+}
+
+@keyframes anime3 {
+  from {
+    filter: blur(20px);
+    transform: translate(-90%, -10%) skew(0);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(-70%, -30%) skew(10deg);
+  }
+}
+
+.elem > h2 {
+  position: relative;
+  z-index: 30;
+}
+.elem:hover::after {
+  top: 0%;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  z-index: -1;
+  font-size: 2vw;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+#shape1 {
+  position: absolute;
+  background-color: #fe330a;
+  filter: blur(50px);
+  top: -60%;
+  left: -20%;
+  width: 90%;
+  height: 90%;
+  z-index: -1;
+  animation-name: shape1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#shape2 {
+  position: absolute;
+  background-color: #fe330a;
+  filter: blur(50px);
+  right: -27%;
+  top: -45%;
+  width: 70%;
+  height: 90%;
+  animation-name: shape2;
+  z-index: -1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shape1 {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes shape2 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+/* Page 4 */
+.project-link {
+  padding-left: 16px;
+  cursor: pointer;
+  transition: var(--transition-linear);
+}
+
+.project-link.active {
+  padding-left: 2px;
+  color: #fff;
+}
+
+@media screen and (width >= 480px) {
+  #page-bottom::after,
+  #page-bottom::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (width >= 768px) {
+  #page-bottom::after,
+  #page-bottom::before {
+    width: 450px;
+    height: 450px;
+  }
+  #hero-shape {
+    top: 75vh;
+    height: 50vh;
+    width: 50vw;
+    right: 0;
+  }
+  #hero-1 {
+    height: 100%;
+    width: 100%;
+    filter: blur(15px);
+  }
+
+  #hero-2 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .circle {
+    margin: 1.5vw 2vw;
+  }
+
+  /* Page 3 */
+  .elem {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(182, 181, 181);
+    /* cursor: pointer; */
+  }
+  .elem::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+    background: var(--yellow);
+    transition: var(--transition-linear);
+  }
+}
+
+@media screen and (width >= 1080px) {
+  #page-bottom::after,
+  #page-bottom::before {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+#presentation {
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}

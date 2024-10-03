@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sundown Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="favicon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="fixed-img hidden fixed top-[27%] rounded-2xl left-1/2 w-[450px] h-[550px] z-50 bg-cover bg-center bg-no-repeat"
+    ></div>
+    <div id="main" class="z-10">
+      <!-- Page 1 -->
+      <div id="page1" class="page px-10 relative">
+        <!-- Navbar -->
+        <nav id="nav" class="py-8 flex items-center justify-between">
+          <img
+            src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+            alt="Sundown Studio"
+          />
+          <ul class="flex gap-[2vw] items-center">
+            <li class="link"><a href="#">Work</a></li>
+            <li class="link"><a href="#">Studio</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Center -->
+        <div
+          id="center"
+          class="flex items-end pb-5 border-b border-gray-400/60 justify-between h-[65vh]"
+          thist.aon
+        >
+          <!-- Left -->
+          <div>
+            <h3 class="text-[2vw] w-[30vw]">
+              Sundown is a multi-disciplinary studio focused on creating unique,
+              end-to-end experiences and environments.
+            </h3>
+          </div>
+          <!-- Right -->
+          <div class="flex items-end">
+            <h1 class="uppercase leading-[1.2] text-[8rem] w-[40vw] text-right">
+              spaces <br />
+              that <br />
+              inspire
+            </h1>
+          </div>
+        </div>
+        <div class="pt-20 pb-10">
+          <div id="hero-shape">
+            <div id="hero-1"></div>
+            <div id="hero-2"></div>
+            <div id="hero-3"></div>
+          </div>
+          <video
+            loop
+            autoplay
+            muted
+            class="rounded-2xl relative z-10"
+            src="https://sundown-ivory.vercel.app/video.mp4"
+          ></video>
+        </div>
+      </div>
+      <!-- Page 2 -->
+      <div id="page2" class="page p-10">
+        <div id="moving-text" class="uppercase whitespace-nowrap">
+          <div class="con">
+            <h1>experience</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>content</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>environments</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+          </div>
+          <div class="con">
+            <h1>experience</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>content</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>environments</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+          </div>
+          <div class="con">
+            <h1>experience</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>content</h1>
+            <div
+              class="inline-block circle w-14 h-14 rounded-[50%] bg-orange-600"
+            ></div>
+            <h1>environments</h1>
+          </div>
+        </div>
+        <div
+          id="page-bottom"
+          class="relative flex items-center justify-between h-[80vh]"
+        >
+          <h1 class="text-[3vw] w-[45vw]">
+            We are a group of design-driven, goal-focused creators, producers,
+            and designers who believe that the details make all the difference.
+          </h1>
+          <div class="flex w-1/4 self-end flex-col gap-16">
+            <img
+              src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+              alt=""
+              class="w-full h-[250px] object-cover rounded-xl"
+            />
+            <p class="font-medium">
+              We love to create, we love to solve, we love to collaborate, and
+              we love to turn amazing ideas into reality. We’re here to partner
+              with you through every step of the process and know that
+              relationships are the most important things we build.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Page 3 -->
+      <div id="page3" class="page min-h-screen">
+        <div id="elem-container">
+          <div
+            data-img="https://images.unsplash.com/photo-1721332149069-a470150ef51c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">Play New Kidvision</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1727409492354-dc440e11eb7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">SOHO NYC</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1720048169694-615ed8b2af21?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">Makers Studio HOI</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1727532308661-111c80476815?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">SOHO 2023</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1725489891146-490f7962e499?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">NYFW Popup</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1709828238489-4829af4c28c9?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">Air Force 12021</h2>
+          </div>
+          <div
+            data-img="https://images.unsplash.com/photo-1709828238489-4829af4c28c9?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="elem"
+          >
+            <h2 class="text-[2.5vw]">50th Anniversary</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Page 4 -->
+      <div
+        id="page4"
+        class="page h-screen px-10 pt-24 flex items-center text-white"
+      >
+        <!-- Left -->
+        <div class="bg-black flex w-full h-full rounded-2xl">
+          <div
+            class="basis-[35%] flex items-center justify-center flex-col gap-5 px-36"
+          >
+            <div
+              class="flex w-full flex-col text-zinc-500 !font-semibold text-[3vw] gap-0 border-l border-zinc-400"
+            >
+              <p
+                data-img="https://sundown-ivory.vercel.app/page4-1.webp"
+                class="project-link active"
+              >
+                Design
+              </p>
+              <p
+                class="project-link"
+                data-img="https://sundown-ivory.vercel.app/page4-2.webp"
+              >
+                Project
+              </p>
+              <p
+                class="project-link"
+                data-img="https://sundown-ivory.vercel.app/page4-3.webp"
+              >
+                Execution
+              </p>
+            </div>
+            <p class="text-base text-white">
+              Our team works with our clients to refine an idea and concept into
+              an executable design. We create a final design that encompasses
+              the brand narrative to bring stories to life and provide
+              end-to-end design solutions from concept, design, and
+              architectural drawings to 3D renderings.
+            </p>
+          </div>
+          <!-- Right -->
+          <div class="flex-1">
+            <img
+              src="https://sundown-ivory.vercel.app/page4-1.webp"
+              class="h-full w-full object-cover rounded-2xl"
+              alt=""
+              id="project-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5 -->
+      <div
+        id="page5"
+        class="page min-h-[60vh] pt-20 px-20 pb-10 flex flex-col gap-4 rounded-b-2xl"
+      >
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 bg-[var(--orange)] rounded-[50%]"></span>
+          <p class="uppercase font-medium">who we work with</p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper"></div>
+        </div>
+      </div>
+
+      <!-- Page 6 -->
+      <div id="page6" class="h-screen"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-32 px-20 gap-40">
+      <div id="shape1"></div>
+      <div id="shape2"></div>
+      <!-- Footer Upper -->
+      <div id="footer-upper" class="w-full flex flex-row justify-between">
+        <h4 class="text-3xl">
+          Work
+          <br />
+          Studio
+          <br />
+          Contact
+        </h4>
+        <div class="flex flex-col gap-8 text-lg font-medium">
+          <p class="text-xl text-gray-200">
+            Get industry insights and creative inspiration straight to your
+            inbox
+          </p>
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="py-3 bg-transparent border-b border-gray-400 placeholder:gray-400"
+          />
+        </div>
+      </div>
+      <!-- Footer Lower-->
+      <div id="footer-lower flex flex-col gap-10">
+        <h1
+          class="text-[22vw] leading-[0.8] text-[#efeae3] pb-8 border-b border-gray-700"
+        >
+          Sundown
+        </h1>
+        <div
+          class="flex flex-row text-lg font-medium mt-7 text-gray-300 justify-between"
+        >
+          <p>Copyright &copy; Sundown Studio</p>
+          <p>Brooklyn, NY</p>
+          <p>Instagram</p>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./script.js"></script>
+</html>
